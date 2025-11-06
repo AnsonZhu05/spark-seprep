@@ -1,0 +1,9 @@
+FROM python:3.9-alpine
+
+WORKDIR /app
+
+COPY tech_facts.py .
+
+RUN chmod +x tech_facts.py
+
+CMD ["python", "./tech_facts.py"]
